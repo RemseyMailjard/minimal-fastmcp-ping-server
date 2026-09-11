@@ -1,0 +1,16 @@
+{
+  "servers": {
+    "fastmcp-ping": {
+      "type": "stdio",
+      "command": "uv",
+      "args": ["run", "fastmcp", "run", "server.py:mcp"]
+    }
+  }
+}{
+  "servers": {
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/"
+    }
+  }
+}

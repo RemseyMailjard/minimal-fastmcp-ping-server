@@ -1,0 +1,18 @@
+[project]
+name = "minimal-fastmcp-ping-server"
+version = "0.1.0"
+description = "A minimal MCP server with a single ping tool."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastmcp>=2.12",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
